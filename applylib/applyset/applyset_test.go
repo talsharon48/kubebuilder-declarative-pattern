@@ -21,10 +21,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/talsharon48/kubebuilder-declarative-pattern/applylib/testutils"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/types"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/applylib/testutils"
 	"sigs.k8s.io/yaml"
 )
 

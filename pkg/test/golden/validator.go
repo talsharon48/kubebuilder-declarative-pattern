@@ -27,17 +27,17 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/patterns/addon"
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/patterns/addon/pkg/loaders"
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/patterns/declarative"
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/test/mocks"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/serializer/json"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/apimachinery/pkg/util/diff"
 	"sigs.k8s.io/controller-runtime/pkg/scheme"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/addon"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/addon/pkg/loaders"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/test/mocks"
 	"sigs.k8s.io/kustomize/kyaml/filesys"
 )
 

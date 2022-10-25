@@ -1,4 +1,4 @@
-module sigs.k8s.io/kubebuilder-declarative-pattern/mockkubeapiserver
+module github.com/talsharon48/kubebuilder-declarative-pattern/mockkubeapiserver
 
 go 1.19
 

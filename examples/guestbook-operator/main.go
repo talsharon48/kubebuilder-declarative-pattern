@@ -24,16 +24,16 @@ import (
 	// to ensure that exec-entrypoint and run can make use of them.
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
 
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/patterns/addon"
 	"k8s.io/apimachinery/pkg/runtime"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	clientgoscheme "k8s.io/client-go/kubernetes/scheme"
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/addon"
 
-	addonsv1alpha1 "sigs.k8s.io/kubebuilder-declarative-pattern/examples/guestbook-operator/api/v1alpha1"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/examples/guestbook-operator/controllers"
+	addonsv1alpha1 "github.com/talsharon48/kubebuilder-declarative-pattern/examples/guestbook-operator/api/v1alpha1"
+	"github.com/talsharon48/kubebuilder-declarative-pattern/examples/guestbook-operator/controllers"
 	//+kubebuilder:scaffold:imports
 )
 

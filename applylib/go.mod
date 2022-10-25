@@ -1,8 +1,8 @@
-module sigs.k8s.io/kubebuilder-declarative-pattern/applylib
+module github.com/talsharon48/kubebuilder-declarative-pattern/applylib
 
 go 1.19
 
-replace sigs.k8s.io/kubebuilder-declarative-pattern/mockkubeapiserver => ../mockkubeapiserver
+replace github.com/talsharon48/kubebuilder-declarative-pattern/mockkubeapiserver => ../mockkubeapiserver
 
 require (
 	github.com/google/go-cmp v0.5.8
@@ -11,7 +11,7 @@ require (
 	k8s.io/client-go v0.25.0
 	k8s.io/klog/v2 v2.70.1
 	sigs.k8s.io/controller-runtime v0.13.0
-	sigs.k8s.io/kubebuilder-declarative-pattern/mockkubeapiserver v0.0.0-00010101000000-000000000000
+	github.com/talsharon48/kubebuilder-declarative-pattern/mockkubeapiserver v0.0.0-00010101000000-000000000000
 	sigs.k8s.io/yaml v1.3.0
 )
 

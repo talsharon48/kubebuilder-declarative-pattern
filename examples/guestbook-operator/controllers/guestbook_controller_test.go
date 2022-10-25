@@ -19,9 +19,9 @@ package controllers
 import (
 	"testing"
 
-	api "sigs.k8s.io/kubebuilder-declarative-pattern/examples/guestbook-operator/api/v1alpha1"
+	api "github.com/talsharon48/kubebuilder-declarative-pattern/examples/guestbook-operator/api/v1alpha1"
 
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/test/golden"
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/test/golden"
 )
 
 func TestGuestbook(t *testing.T) {

@@ -42,8 +42,8 @@ import (
 	"sigs.k8s.io/kustomize/api/krusty"
 	"sigs.k8s.io/kustomize/kyaml/filesys"
 
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/applier"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/applier"
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
 )
 
 var _ reconcile.Reconciler = &Reconciler{}
@@ -389,7 +389,8 @@ func (r *Reconciler) BuildDeploymentObjectsWithFs(ctx context.Context, name type
 				fs.WriteFile(string(manifestPath), blob)
 			}
 		}
-		manifestObjects.Path = filepath.Dir(manifestPath)
+		splitManifestPath := strings.Split(filepath.Dir(manifestPath), "/")
+		manifestObjects.Path = strings.Join(splitManifestPath[:len(splitManifestPath)-1], "/")
 		manifestObjects.Items = append(manifestObjects.Items, objects.Items...)
 		manifestObjects.Blobs = append(manifestObjects.Blobs, objects.Blobs...)
 	}

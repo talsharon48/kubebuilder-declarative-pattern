@@ -19,8 +19,8 @@ package declarative
 import (
 	"context"
 
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
 	"sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
 )
 
 // This will likely become a topological sort in the future, for owner refs.

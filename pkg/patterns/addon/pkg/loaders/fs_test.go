@@ -21,9 +21,9 @@ import (
 	"reflect"
 	"testing"
 
+	addonv1alpha1 "github.com/talsharon48/kubebuilder-declarative-pattern/pkg/patterns/addon/pkg/apis/v1alpha1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
-	addonv1alpha1 "sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/addon/pkg/apis/v1alpha1"
 )
 
 func Test_NewManifestLoader(t *testing.T) {

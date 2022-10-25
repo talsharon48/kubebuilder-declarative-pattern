@@ -17,8 +17,8 @@ limitations under the License.
 package status
 
 import (
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/patterns/declarative"
 	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative"
 )
 
 // Deprecated: This function exists for backward compatibility, please use NewKstatusCheck

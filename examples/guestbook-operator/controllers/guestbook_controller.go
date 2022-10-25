@@ -20,17 +20,17 @@ import (
 	"github.com/go-logr/logr"
 	"k8s.io/apimachinery/pkg/runtime"
 
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/patterns/addon"
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/patterns/addon/pkg/status"
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/patterns/declarative"
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/controller"
 	"sigs.k8s.io/controller-runtime/pkg/handler"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 	"sigs.k8s.io/controller-runtime/pkg/source"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/addon"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/addon/pkg/status"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative"
 
-	api "sigs.k8s.io/kubebuilder-declarative-pattern/examples/guestbook-operator/api/v1alpha1"
+	api "github.com/talsharon48/kubebuilder-declarative-pattern/examples/guestbook-operator/api/v1alpha1"
 )
 
 var _ reconcile.Reconciler = &GuestbookReconciler{}

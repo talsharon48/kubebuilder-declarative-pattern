@@ -28,6 +28,7 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/talsharon48/kubebuilder-declarative-pattern/mockkubeapiserver"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
@@ -42,7 +43,6 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/util/homedir"
 	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/mockkubeapiserver"
 )
 
 var kubeconfig = flag.String("kubeconfig", "", "set to use a real kube-apiserver")

@@ -6,11 +6,11 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/talsharon48/kubebuilder-declarative-pattern/mockkubeapiserver"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/rest"
 	"k8s.io/klog/v2"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/mockkubeapiserver"
 )
 
 func TestRESTMapping(t *testing.T) {

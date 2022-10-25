@@ -20,8 +20,8 @@ import (
 	"context"
 	"testing"
 
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/patterns/declarative/pkg/manifest"
 )
 
 func Test_Patch(t *testing.T) {

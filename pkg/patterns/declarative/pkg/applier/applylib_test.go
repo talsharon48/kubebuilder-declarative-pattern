@@ -8,15 +8,15 @@ import (
 	"path/filepath"
 	"testing"
 
+	"github.com/talsharon48/kubebuilder-declarative-pattern/mockkubeapiserver"
+	controllerrestmapper "github.com/talsharon48/kubebuilder-declarative-pattern/pkg/restmapper"
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/test/httprecorder"
+	"github.com/talsharon48/kubebuilder-declarative-pattern/pkg/test/testharness"
 	"k8s.io/apimachinery/pkg/api/meta"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/rest"
 	"k8s.io/klog/v2"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/mockkubeapiserver"
-	controllerrestmapper "sigs.k8s.io/kubebuilder-declarative-pattern/pkg/restmapper"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/test/httprecorder"
-	"sigs.k8s.io/kubebuilder-declarative-pattern/pkg/test/testharness"
 )
 
 func TestApplySetApplier(t *testing.T) {
